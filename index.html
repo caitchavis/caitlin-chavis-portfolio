@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio for Caitlin Chavis, theatrical costumer, costume designer, stitcher, and wardrobe artist."
+    />
+    <title>Caitlin Chavis | Costume Portfolio</title>
+    <link rel="icon" href="public/assets/thread-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#top" aria-label="Caitlin Chavis home">
+        <span>Caitlin Chavis</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#practice">Practice</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Costume Design · Construction · Wardrobe</p>
+          <h1>Caitlin Chavis</h1>
+          <p class="hero-statement">
+            Detail oriented costumer with experience in theatrical costume construction,
+            alterations, wardrobe maintenance, and collaborative storytelling through artistry.
+          </p>
+          <div class="hero-actions" aria-label="Portfolio actions">
+            <a class="button primary" href="#work">View Portfolio</a>
+            <a class="button secondary" href="public/docs/caitlin-chavis-resume.png" target="_blank" rel="noreferrer">
+              Open Resume
+            </a>
+          </div>
+        </div>
+        <figure class="hero-image" data-reveal>
+          <img src="public/assets/artist-portrait.webp" alt="Black and white portrait of Caitlin Chavis" />
+          <figcaption>Honolulu, HI</figcaption>
+        </figure>
+      </section>
+
+      <section class="intro-band" data-reveal>
+        <p>
+          Skilled in hand and machine sewing, cutting, fitting support, interpreting renderings
+          and patterns, costume craftwork, theatrical hair and makeup, and fast-paced shop work.
+        </p>
+      </section>
+
+      <section id="work" class="section-shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Selected work</p>
+          <h2>Built for the stage</h2>
+        </div>
+        <div class="filter-bar" data-reveal aria-label="Filter portfolio projects">
+          <button class="filter-button active" type="button" data-filter="All">All</button>
+          <button class="filter-button" type="button" data-filter="Design">Design</button>
+          <button class="filter-button" type="button" data-filter="Builds">Builds</button>
+          <button class="filter-button" type="button" data-filter="Skills">Skills</button>
+        </div>
+        <div id="projectGrid" class="project-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="practice" class="practice-section">
+        <div class="section-shell practice-grid">
+          <div data-reveal>
+            <p class="eyebrow">Practice</p>
+            <h2>Shop precision with theatrical imagination.</h2>
+          </div>
+          <div class="practice-list" data-reveal>
+            <article>
+              <span>01</span>
+              <h3>Costume Construction</h3>
+              <p>Large builds, alterations, draping, flat patterning, fitting support, and repair.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Wardrobe Maintenance</h3>
+              <p>Run-ready garments, tour support, dressing, organization, and daily show care.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Specialty Skills</h3>
+              <p>Corsetry, millinery, dye work, makeup, specialty dressing, and costume craftwork.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section-shell resume-section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Resume</p>
+          <h2>Experience</h2>
+        </div>
+        <div class="resume-grid">
+          <div class="resume-card" data-reveal>
+            <h3>Shop Experience</h3>
+            <dl>
+              <dt>Cirque du Soleil</dt>
+              <dd>Wardrobe and Alterations Specialist · December 2025 - Present</dd>
+              <dt>University of Hawai'i at Manoa</dt>
+              <dd>Costume Shop Graduate Assistant · August 2022 - May 2025</dd>
+              <dt>Ohana Arts</dt>
+              <dd>Costume Shop Manager and Stitcher · 2023 - August 2025</dd>
+              <dt>Indiana University of Pennsylvania</dt>
+              <dd>Costume Shop Student Employee · 2018 - 2022</dd>
+            </dl>
+          </div>
+          <div class="resume-card" data-reveal>
+            <h3>Education</h3>
+            <dl>
+              <dt>Master of Fine Arts, Costume Design</dt>
+              <dd>University of Hawai'i at Manoa · 2022 - May 2025</dd>
+              <dt>Bachelor of Arts, Theatre Design Tech Management</dt>
+              <dd>Indiana University of Pennsylvania · 2018 - 2022</dd>
+            </dl>
+            <h3>Skills</h3>
+            <p>
+              Alterations, tailoring, precision sewing, cutting, draping, flat patterning, corsetry,
+              millinery, theatrical hair and makeup, and specialty dressing.
+            </p>
+          </div>
+          <a class="resume-preview" href="public/docs/caitlin-chavis-resume.png" target="_blank" rel="noreferrer" data-reveal>
+            <img src="public/docs/caitlin-chavis-resume.png" alt="Resume preview for Caitlin Chavis" />
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section section-shell" data-reveal>
+        <p class="eyebrow">Get in touch</p>
+        <h2>Available for costume shops, builds, wardrobe, and theatrical collaborations.</h2>
+        <div class="contact-links">
+          <a href="mailto:CaitChavis@gmail.com">CaitChavis@gmail.com</a>
+          <span>Honolulu, HI</span>
+          <span>Website domain placeholder</span>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="projectDialog" class="project-dialog" aria-labelledby="dialogTitle">
+      <button class="dialog-close" type="button" aria-label="Close project">×</button>
+      <div class="dialog-content">
+        <div>
+          <p id="dialogCategory" class="eyebrow"></p>
+          <h2 id="dialogTitle"></h2>
+          <p id="dialogDescription"></p>
+        </div>
+        <div id="dialogGallery" class="dialog-gallery"></div>
+      </div>
+    </dialog>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
