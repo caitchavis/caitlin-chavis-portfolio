@@ -1,4 +1,4 @@
-import { projects } from './project-data.js';
+import { projects } from './project-data.js?v=20260706-safari-images';
 
 const grid = document.querySelector('#projectGrid');
 const filterButtons = [...document.querySelectorAll('.filter-button')];
@@ -26,7 +26,7 @@ const renderProjects = () => {
         <article class="project-card" data-reveal style="--delay: ${Math.min(index * 55, 330)}ms">
           <button type="button" data-project="${project.slug}" aria-label="Open ${project.title}">
             <span class="project-media">
-              <img src="${cover.src}" alt="${cover.alt}" loading="lazy" />
+              <img src="${cover.src}" alt="${cover.alt}" />
             </span>
             <span class="project-meta">
               <span>${projectSummary(project)}</span>
@@ -47,7 +47,7 @@ const openProject = (slug) => {
   dialogCategory.textContent = projectSummary(project);
   dialogDescription.textContent = project.description;
   dialogGallery.innerHTML = project.images
-    .map((image) => `<img src="${image.src}" alt="${image.alt}" loading="lazy" />`)
+    .map((image) => `<img src="${image.src}" alt="${image.alt}" />`)
     .join('');
   dialog.showModal();
   document.body.classList.add('dialog-open');

@@ -284,19 +284,12 @@ h3 {
 
 .project-media {
   display: block;
-  aspect-ratio: 4 / 5;
   overflow: hidden;
-  background: var(--panel);
-}
-
-.project-card:nth-child(5n + 2) .project-media,
-.project-card:nth-child(5n + 4) .project-media {
-  aspect-ratio: 16 / 10;
+  background: #111;
 }
 
 .project-media img {
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   transition: transform 600ms ease;
 }
 
@@ -484,10 +477,8 @@ h3 {
 }
 
 .dialog-gallery img {
-  aspect-ratio: 4 / 5;
-  height: 100%;
-  object-fit: cover;
-  background: var(--panel);
+  height: auto;
+  background: transparent;
 }
 
 [data-reveal] {
@@ -547,18 +538,6 @@ h3 {
   .project-card:nth-child(5n + 2),
   .project-card:nth-child(5n + 4) {
     grid-column: span 12;
-  }
-
-  .project-card .project-media,
-  .project-card:nth-child(5n + 2) .project-media,
-  .project-card:nth-child(5n + 4) .project-media {
-    aspect-ratio: 4 / 3;
-  }
-
-  .project-media img,
-  .dialog-gallery img {
-    object-fit: contain;
-    background: #111;
   }
 
   .dialog-gallery {

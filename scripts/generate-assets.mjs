@@ -76,22 +76,22 @@ const projectDescription = (title, category) => {
 
 const convertImage = async (source, outDir, baseName, index) => {
   const resize = { width: index === 0 ? 1300 : 1100, height: index === 0 ? 1500 : 1300, fit: 'inside', withoutEnlargement: true };
-  const webpName = `${baseName}.webp`;
-  const webpOut = join(outDir, webpName);
+  const imageName = `${baseName}.jpg`;
+  const imageOut = join(outDir, imageName);
 
   if (extname(source).toLowerCase() === '.heic') {
     const thumbDir = join(tmpdir(), `caitlin-heic-${Date.now()}-${Math.random().toString(16).slice(2)}`);
     await mkdir(thumbDir, { recursive: true });
     await run('qlmanage', ['-t', '-s', String(resize.width), '-o', thumbDir, source]);
     const thumbnail = join(thumbDir, `${basename(source)}.png`);
-    await sharp(thumbnail).resize(resize).webp({ quality: 84 }).toFile(webpOut);
+    await sharp(thumbnail).resize(resize).jpeg({ quality: 86, mozjpeg: true }).toFile(imageOut);
     await rm(thumbDir, { recursive: true, force: true });
-    return webpName;
+    return imageName;
   }
 
   try {
-    await sharp(source).rotate().resize(resize).webp({ quality: 82 }).toFile(webpOut);
-    return webpName;
+    await sharp(source).rotate().resize(resize).jpeg({ quality: 86, mozjpeg: true }).toFile(imageOut);
+    return imageName;
   } catch (error) {
     throw error;
   }
@@ -102,8 +102,8 @@ await mkdir(publicDocs, { recursive: true });
 
 await sharp(join(root, 'artist_image.png'))
   .resize({ width: 1200, withoutEnlargement: true })
-  .webp({ quality: 84 })
-  .toFile(join(publicAssets, 'artist-portrait.webp'));
+  .jpeg({ quality: 88, mozjpeg: true })
+  .toFile(join(publicAssets, 'artist-portrait.jpg'));
 await copyFile(join(root, 'resume.png'), join(publicDocs, 'caitlin-chavis-resume.png'));
 
 await writeFile(
