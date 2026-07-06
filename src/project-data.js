@@ -574,11 +574,11 @@ export const projects = [
         "alt": "Tutu Base portfolio image 1"
       },
       {
-        "src": "public/assets/projects/tutu-base/02.jpg",
+        "src": "public/assets/projects/tutu-base/02.webp",
         "alt": "Tutu Base portfolio image 2"
       },
       {
-        "src": "public/assets/projects/tutu-base/03.jpg",
+        "src": "public/assets/projects/tutu-base/03.webp",
         "alt": "Tutu Base portfolio image 3"
       },
       {
@@ -686,35 +686,35 @@ export const projects = [
     "description": "Millinery documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
     "images": [
       {
-        "src": "public/assets/projects/millinery/01.jpg",
+        "src": "public/assets/projects/millinery/01.webp",
         "alt": "Millinery portfolio image 1"
       },
       {
-        "src": "public/assets/projects/millinery/02.jpg",
+        "src": "public/assets/projects/millinery/02.webp",
         "alt": "Millinery portfolio image 2"
       },
       {
-        "src": "public/assets/projects/millinery/03.jpg",
+        "src": "public/assets/projects/millinery/03.webp",
         "alt": "Millinery portfolio image 3"
       },
       {
-        "src": "public/assets/projects/millinery/04.jpg",
+        "src": "public/assets/projects/millinery/04.webp",
         "alt": "Millinery portfolio image 4"
       },
       {
-        "src": "public/assets/projects/millinery/05.jpg",
+        "src": "public/assets/projects/millinery/05.webp",
         "alt": "Millinery portfolio image 5"
       },
       {
-        "src": "public/assets/projects/millinery/06.jpg",
+        "src": "public/assets/projects/millinery/06.webp",
         "alt": "Millinery portfolio image 6"
       },
       {
-        "src": "public/assets/projects/millinery/07.jpg",
+        "src": "public/assets/projects/millinery/07.webp",
         "alt": "Millinery portfolio image 7"
       },
       {
-        "src": "public/assets/projects/millinery/08.jpg",
+        "src": "public/assets/projects/millinery/08.webp",
         "alt": "Millinery portfolio image 8"
       }
     ]
@@ -766,35 +766,35 @@ export const projects = [
     "description": "Specialty Dye documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
     "images": [
       {
-        "src": "public/assets/projects/specialty-dye/01.jpg",
+        "src": "public/assets/projects/specialty-dye/01.webp",
         "alt": "Specialty Dye portfolio image 1"
       },
       {
-        "src": "public/assets/projects/specialty-dye/02.jpg",
+        "src": "public/assets/projects/specialty-dye/02.webp",
         "alt": "Specialty Dye portfolio image 2"
       },
       {
-        "src": "public/assets/projects/specialty-dye/03.jpg",
+        "src": "public/assets/projects/specialty-dye/03.webp",
         "alt": "Specialty Dye portfolio image 3"
       },
       {
-        "src": "public/assets/projects/specialty-dye/04.jpg",
+        "src": "public/assets/projects/specialty-dye/04.webp",
         "alt": "Specialty Dye portfolio image 4"
       },
       {
-        "src": "public/assets/projects/specialty-dye/05.jpg",
+        "src": "public/assets/projects/specialty-dye/05.webp",
         "alt": "Specialty Dye portfolio image 5"
       },
       {
-        "src": "public/assets/projects/specialty-dye/06.jpg",
+        "src": "public/assets/projects/specialty-dye/06.webp",
         "alt": "Specialty Dye portfolio image 6"
       },
       {
-        "src": "public/assets/projects/specialty-dye/07.jpg",
+        "src": "public/assets/projects/specialty-dye/07.webp",
         "alt": "Specialty Dye portfolio image 7"
       },
       {
-        "src": "public/assets/projects/specialty-dye/08.jpg",
+        "src": "public/assets/projects/specialty-dye/08.webp",
         "alt": "Specialty Dye portfolio image 8"
       }
     ]

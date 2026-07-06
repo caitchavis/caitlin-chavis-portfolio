@@ -1,7 +1,8 @@
-import { copyFile, mkdir, readdir, writeFile } from 'node:fs/promises';
+import { copyFile, mkdir, readdir, rm, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { basename, extname, join } from 'node:path';
 import { createRequire } from 'node:module';
+import { tmpdir } from 'node:os';
 import { promisify } from 'node:util';
 import { execFile } from 'node:child_process';
 
@@ -77,17 +78,23 @@ const convertImage = async (source, outDir, baseName, index) => {
   const resize = { width: index === 0 ? 1300 : 1100, height: index === 0 ? 1500 : 1300, fit: 'inside', withoutEnlargement: true };
   const webpName = `${baseName}.webp`;
   const webpOut = join(outDir, webpName);
+
+  if (extname(source).toLowerCase() === '.heic') {
+    const thumbDir = join(tmpdir(), `caitlin-heic-${Date.now()}-${Math.random().toString(16).slice(2)}`);
+    await mkdir(thumbDir, { recursive: true });
+    await run('qlmanage', ['-t', '-s', String(resize.width), '-o', thumbDir, source]);
+    const thumbnail = join(thumbDir, `${basename(source)}.png`);
+    await sharp(thumbnail).resize(resize).webp({ quality: 84 }).toFile(webpOut);
+    await rm(thumbDir, { recursive: true, force: true });
+    return webpName;
+  }
+
   try {
     await sharp(source).rotate().resize(resize).webp({ quality: 82 }).toFile(webpOut);
     return webpName;
   } catch (error) {
-    if (extname(source).toLowerCase() !== '.heic') throw error;
+    throw error;
   }
-
-  const jpegName = `${baseName}.jpg`;
-  const jpegOut = join(outDir, jpegName);
-  await run('sips', ['-s', 'format', 'jpeg', '--resampleWidth', String(resize.width), source, '--out', jpegOut]);
-  return jpegName;
 };
 
 await mkdir(publicAssets, { recursive: true });
@@ -118,6 +125,7 @@ for (const [folder, category] of entries) {
   const title = titleFromFolder(folder);
   const slug = slugify(title);
   const outDir = join(publicAssets, 'projects', slug);
+  await rm(outDir, { recursive: true, force: true });
   await mkdir(outDir, { recursive: true });
 
   const images = [];
