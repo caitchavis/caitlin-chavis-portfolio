@@ -16,22 +16,20 @@ const publicDocs = join(root, 'public', 'docs');
 const sourceRoot = join(root, 'Portfolio');
 
 const entries = [
+  ['Rent - Design', 'Design'],
+  ['Builds - Designs - AWTYB ', 'Design'],
+  ['Builds - Design - 4.48 Psychosis', 'Design'],
   ['Design - Spelling Bee', 'Design'],
   ['Design - West Side Story', 'Design'],
   ['Designs - Mr. Burns', 'Design'],
-  ['Rent - Design', 'Design'],
-  ['Builds - Abstract Ideas ', 'Builds'],
-  ['Builds -  Moana', 'Builds'],
-  ['Builds - Kabuki ', 'Builds'],
-  ['Builds - Mulan ', 'Builds'],
-  ['Builds - Puana ', 'Builds'],
-  ['Builds - Rent ', 'Builds'],
-  ['Builds - Design - 4.48 Psychosis', 'Design'],
-  ['Builds - Designs - AWTYB ', 'Design'],
   ['Builds - Designs - Water Station', 'Design'],
+  ['Builds - Rent ', 'Builds'],
+  ['Builds - Puana ', 'Builds'],
+  ['Builds - Mulan ', 'Builds'],
   ['Builds - Glitter in the Pā’a’kai', 'Builds'],
-  ['Builds - Dance Dance Dance ', 'Builds'],
-  ['Builds - Tutu Base', 'Builds'],
+  ['Builds - Kabuki ', 'Builds'],
+  ['Builds -  Moana', 'Builds'],
+  ['Builds - Abstract Ideas ', 'Builds'],
   ['Builds - Corset 1 (combine with 1-3)', 'Skills'],
   ['Builds - Corset 2 (combine)', 'Skills'],
   ['Builds - Corset 3 (combine)', 'Skills'],
@@ -72,6 +70,78 @@ const projectDescription = (title, category) => {
         ? 'specialty costume craft, finish work, and process documentation'
         : 'costume construction, stitching, alterations, and build process';
   return `${title} documentation featuring ${role}. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.`;
+};
+
+const moveImageToFront = (project, filename) => {
+  const index = project?.images.findIndex((image) => image.src.endsWith(`/${filename}`)) ?? -1;
+  if (index > 0) {
+    const [image] = project.images.splice(index, 1);
+    project.images.unshift(image);
+  }
+};
+
+const curateProjects = (projectList) => {
+  const bySlug = new Map(projectList.map((project) => [project.slug, project]));
+  moveImageToFront(bySlug.get('abstract-ideas'), '02.jpg');
+  moveImageToFront(bySlug.get('moana'), '05.jpg');
+  moveImageToFront(bySlug.get('millinery'), '05.jpg');
+
+  const naturalDye = bySlug.get('specialty-dye');
+  if (naturalDye) {
+    naturalDye.title = 'Natural Dye';
+    naturalDye.slug = 'natural-dye';
+    naturalDye.description = naturalDye.description.replace(/^Specialty Dye documentation/, 'Natural Dye documentation');
+    naturalDye.images = naturalDye.images.map((image) => ({
+      ...image,
+      alt: image.alt.replace(/^Specialty Dye/, 'Natural Dye'),
+    }));
+  }
+
+  const rentDesign = bySlug.get('rent---design');
+  if (rentDesign) {
+    rentDesign.title = 'Rent';
+    rentDesign.description = rentDesign.description.replace(/^Rent - Design documentation/, 'Rent documentation');
+    rentDesign.images = rentDesign.images.map((image) => ({
+      ...image,
+      alt: image.alt.replace(/^Rent - Design/, 'Rent'),
+    }));
+  }
+
+  const corsets = ['corset-1', 'corset-2', 'corset-3'].map((slug) => bySlug.get(slug)).filter(Boolean);
+  const corsetry = {
+    title: 'Corsetry',
+    slug: 'corsetry',
+    category: 'Skills',
+    description: 'Corsetry documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.',
+    images: corsets.flatMap((project) =>
+      project.images.map((image, index) => ({
+        src: image.src,
+        alt: `${project.title} corsetry portfolio image ${index + 1}`,
+      })),
+    ),
+  };
+
+  return [
+    'rent---design',
+    'awtyb',
+    '448-psychosis',
+    'spelling-bee',
+    'west-side-story',
+    'mr-burns',
+    'water-station',
+    'rent',
+    'puana',
+    'mulan',
+    'glitter-in-the-paakai',
+    'kabuki',
+    'moana',
+    'abstract-ideas',
+  ]
+    .map((slug) => bySlug.get(slug))
+    .filter(Boolean)
+    .concat([corsetry])
+    .concat(['makeup', 'millinery', 'specialty-dressing'].map((slug) => bySlug.get(slug)).filter(Boolean))
+    .concat(naturalDye ? [naturalDye] : []);
 };
 
 const convertImage = async (source, outDir, baseName, index) => {
@@ -154,6 +224,7 @@ for (const [folder, category] of entries) {
   }
 }
 
-const source = `export const projects = ${JSON.stringify(projects, null, 2)};\n`;
+const curatedProjects = curateProjects(projects);
+const source = `export const projects = ${JSON.stringify(curatedProjects, null, 2)};\n`;
 await writeFile(join(root, 'src', 'project-data.js'), source);
-console.log(`Generated ${projects.length} projects and ${projects.reduce((total, project) => total + project.images.length, 0)} images.`);
+console.log(`Generated ${curatedProjects.length} projects and ${curatedProjects.reduce((total, project) => total + project.images.length, 0)} images.`);

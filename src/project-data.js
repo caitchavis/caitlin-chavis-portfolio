@@ -1,5 +1,125 @@
 export const projects = [
   {
+    "title": "Rent",
+    "slug": "rent---design",
+    "category": "Design",
+    "description": "Rent documentation featuring costume design, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "images": [
+      {
+        "src": "public/assets/projects/rent---design/01.jpg",
+        "alt": "Rent portfolio image 1"
+      },
+      {
+        "src": "public/assets/projects/rent---design/02.jpg",
+        "alt": "Rent portfolio image 2"
+      },
+      {
+        "src": "public/assets/projects/rent---design/03.jpg",
+        "alt": "Rent portfolio image 3"
+      },
+      {
+        "src": "public/assets/projects/rent---design/04.jpg",
+        "alt": "Rent portfolio image 4"
+      },
+      {
+        "src": "public/assets/projects/rent---design/05.jpg",
+        "alt": "Rent portfolio image 5"
+      },
+      {
+        "src": "public/assets/projects/rent---design/06.jpg",
+        "alt": "Rent portfolio image 6"
+      },
+      {
+        "src": "public/assets/projects/rent---design/07.jpg",
+        "alt": "Rent portfolio image 7"
+      },
+      {
+        "src": "public/assets/projects/rent---design/08.jpg",
+        "alt": "Rent portfolio image 8"
+      }
+    ]
+  },
+  {
+    "title": "AWTYB",
+    "slug": "awtyb",
+    "category": "Design",
+    "description": "AWTYB documentation featuring costume design, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "images": [
+      {
+        "src": "public/assets/projects/awtyb/01.jpg",
+        "alt": "AWTYB portfolio image 1"
+      },
+      {
+        "src": "public/assets/projects/awtyb/02.jpg",
+        "alt": "AWTYB portfolio image 2"
+      },
+      {
+        "src": "public/assets/projects/awtyb/03.jpg",
+        "alt": "AWTYB portfolio image 3"
+      },
+      {
+        "src": "public/assets/projects/awtyb/04.jpg",
+        "alt": "AWTYB portfolio image 4"
+      },
+      {
+        "src": "public/assets/projects/awtyb/05.jpg",
+        "alt": "AWTYB portfolio image 5"
+      },
+      {
+        "src": "public/assets/projects/awtyb/06.jpg",
+        "alt": "AWTYB portfolio image 6"
+      },
+      {
+        "src": "public/assets/projects/awtyb/07.jpg",
+        "alt": "AWTYB portfolio image 7"
+      },
+      {
+        "src": "public/assets/projects/awtyb/08.jpg",
+        "alt": "AWTYB portfolio image 8"
+      }
+    ]
+  },
+  {
+    "title": "4.48 Psychosis",
+    "slug": "448-psychosis",
+    "category": "Design",
+    "description": "4.48 Psychosis documentation featuring costume design, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "images": [
+      {
+        "src": "public/assets/projects/448-psychosis/01.jpg",
+        "alt": "4.48 Psychosis portfolio image 1"
+      },
+      {
+        "src": "public/assets/projects/448-psychosis/02.jpg",
+        "alt": "4.48 Psychosis portfolio image 2"
+      },
+      {
+        "src": "public/assets/projects/448-psychosis/03.jpg",
+        "alt": "4.48 Psychosis portfolio image 3"
+      },
+      {
+        "src": "public/assets/projects/448-psychosis/04.jpg",
+        "alt": "4.48 Psychosis portfolio image 4"
+      },
+      {
+        "src": "public/assets/projects/448-psychosis/05.jpg",
+        "alt": "4.48 Psychosis portfolio image 5"
+      },
+      {
+        "src": "public/assets/projects/448-psychosis/06.jpg",
+        "alt": "4.48 Psychosis portfolio image 6"
+      },
+      {
+        "src": "public/assets/projects/448-psychosis/07.jpg",
+        "alt": "4.48 Psychosis portfolio image 7"
+      },
+      {
+        "src": "public/assets/projects/448-psychosis/08.jpg",
+        "alt": "4.48 Psychosis portfolio image 8"
+      }
+    ]
+  },
+  {
     "title": "Spelling Bee",
     "slug": "spelling-bee",
     "category": "Design",
@@ -120,214 +240,42 @@ export const projects = [
     ]
   },
   {
-    "title": "Rent - Design",
-    "slug": "rent---design",
+    "title": "Water Station",
+    "slug": "water-station",
     "category": "Design",
-    "description": "Rent - Design documentation featuring costume design, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Water Station documentation featuring costume design, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
     "images": [
       {
-        "src": "public/assets/projects/rent---design/01.jpg",
-        "alt": "Rent - Design portfolio image 1"
+        "src": "public/assets/projects/water-station/01.jpg",
+        "alt": "Water Station portfolio image 1"
       },
       {
-        "src": "public/assets/projects/rent---design/02.jpg",
-        "alt": "Rent - Design portfolio image 2"
+        "src": "public/assets/projects/water-station/02.jpg",
+        "alt": "Water Station portfolio image 2"
       },
       {
-        "src": "public/assets/projects/rent---design/03.jpg",
-        "alt": "Rent - Design portfolio image 3"
+        "src": "public/assets/projects/water-station/03.jpg",
+        "alt": "Water Station portfolio image 3"
       },
       {
-        "src": "public/assets/projects/rent---design/04.jpg",
-        "alt": "Rent - Design portfolio image 4"
+        "src": "public/assets/projects/water-station/04.jpg",
+        "alt": "Water Station portfolio image 4"
       },
       {
-        "src": "public/assets/projects/rent---design/05.jpg",
-        "alt": "Rent - Design portfolio image 5"
+        "src": "public/assets/projects/water-station/05.jpg",
+        "alt": "Water Station portfolio image 5"
       },
       {
-        "src": "public/assets/projects/rent---design/06.jpg",
-        "alt": "Rent - Design portfolio image 6"
+        "src": "public/assets/projects/water-station/06.jpg",
+        "alt": "Water Station portfolio image 6"
       },
       {
-        "src": "public/assets/projects/rent---design/07.jpg",
-        "alt": "Rent - Design portfolio image 7"
+        "src": "public/assets/projects/water-station/07.jpg",
+        "alt": "Water Station portfolio image 7"
       },
       {
-        "src": "public/assets/projects/rent---design/08.jpg",
-        "alt": "Rent - Design portfolio image 8"
-      }
-    ]
-  },
-  {
-    "title": "Abstract Ideas",
-    "slug": "abstract-ideas",
-    "category": "Builds",
-    "description": "Abstract Ideas documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
-    "images": [
-      {
-        "src": "public/assets/projects/abstract-ideas/01.jpg",
-        "alt": "Abstract Ideas portfolio image 1"
-      },
-      {
-        "src": "public/assets/projects/abstract-ideas/02.jpg",
-        "alt": "Abstract Ideas portfolio image 2"
-      },
-      {
-        "src": "public/assets/projects/abstract-ideas/03.jpg",
-        "alt": "Abstract Ideas portfolio image 3"
-      },
-      {
-        "src": "public/assets/projects/abstract-ideas/04.jpg",
-        "alt": "Abstract Ideas portfolio image 4"
-      },
-      {
-        "src": "public/assets/projects/abstract-ideas/05.jpg",
-        "alt": "Abstract Ideas portfolio image 5"
-      },
-      {
-        "src": "public/assets/projects/abstract-ideas/06.jpg",
-        "alt": "Abstract Ideas portfolio image 6"
-      },
-      {
-        "src": "public/assets/projects/abstract-ideas/07.jpg",
-        "alt": "Abstract Ideas portfolio image 7"
-      }
-    ]
-  },
-  {
-    "title": "Moana",
-    "slug": "moana",
-    "category": "Builds",
-    "description": "Moana documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
-    "images": [
-      {
-        "src": "public/assets/projects/moana/01.jpg",
-        "alt": "Moana portfolio image 1"
-      },
-      {
-        "src": "public/assets/projects/moana/02.jpg",
-        "alt": "Moana portfolio image 2"
-      },
-      {
-        "src": "public/assets/projects/moana/03.jpg",
-        "alt": "Moana portfolio image 3"
-      },
-      {
-        "src": "public/assets/projects/moana/04.jpg",
-        "alt": "Moana portfolio image 4"
-      },
-      {
-        "src": "public/assets/projects/moana/05.jpg",
-        "alt": "Moana portfolio image 5"
-      },
-      {
-        "src": "public/assets/projects/moana/06.jpg",
-        "alt": "Moana portfolio image 6"
-      },
-      {
-        "src": "public/assets/projects/moana/07.jpg",
-        "alt": "Moana portfolio image 7"
-      },
-      {
-        "src": "public/assets/projects/moana/08.jpg",
-        "alt": "Moana portfolio image 8"
-      }
-    ]
-  },
-  {
-    "title": "Kabuki",
-    "slug": "kabuki",
-    "category": "Builds",
-    "description": "Kabuki documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
-    "images": [
-      {
-        "src": "public/assets/projects/kabuki/01.jpg",
-        "alt": "Kabuki portfolio image 1"
-      },
-      {
-        "src": "public/assets/projects/kabuki/02.jpg",
-        "alt": "Kabuki portfolio image 2"
-      },
-      {
-        "src": "public/assets/projects/kabuki/03.jpg",
-        "alt": "Kabuki portfolio image 3"
-      },
-      {
-        "src": "public/assets/projects/kabuki/04.jpg",
-        "alt": "Kabuki portfolio image 4"
-      },
-      {
-        "src": "public/assets/projects/kabuki/05.jpg",
-        "alt": "Kabuki portfolio image 5"
-      },
-      {
-        "src": "public/assets/projects/kabuki/06.jpg",
-        "alt": "Kabuki portfolio image 6"
-      },
-      {
-        "src": "public/assets/projects/kabuki/07.jpg",
-        "alt": "Kabuki portfolio image 7"
-      },
-      {
-        "src": "public/assets/projects/kabuki/08.jpg",
-        "alt": "Kabuki portfolio image 8"
-      }
-    ]
-  },
-  {
-    "title": "Mulan",
-    "slug": "mulan",
-    "category": "Builds",
-    "description": "Mulan documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
-    "images": [
-      {
-        "src": "public/assets/projects/mulan/01.jpg",
-        "alt": "Mulan portfolio image 1"
-      },
-      {
-        "src": "public/assets/projects/mulan/02.jpg",
-        "alt": "Mulan portfolio image 2"
-      },
-      {
-        "src": "public/assets/projects/mulan/03.jpg",
-        "alt": "Mulan portfolio image 3"
-      },
-      {
-        "src": "public/assets/projects/mulan/04.jpg",
-        "alt": "Mulan portfolio image 4"
-      },
-      {
-        "src": "public/assets/projects/mulan/05.jpg",
-        "alt": "Mulan portfolio image 5"
-      },
-      {
-        "src": "public/assets/projects/mulan/06.jpg",
-        "alt": "Mulan portfolio image 6"
-      }
-    ]
-  },
-  {
-    "title": "Puana",
-    "slug": "puana",
-    "category": "Builds",
-    "description": "Puana documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
-    "images": [
-      {
-        "src": "public/assets/projects/puana/01.jpg",
-        "alt": "Puana portfolio image 1"
-      },
-      {
-        "src": "public/assets/projects/puana/02.jpg",
-        "alt": "Puana portfolio image 2"
-      },
-      {
-        "src": "public/assets/projects/puana/03.jpg",
-        "alt": "Puana portfolio image 3"
-      },
-      {
-        "src": "public/assets/projects/puana/04.jpg",
-        "alt": "Puana portfolio image 4"
+        "src": "public/assets/projects/water-station/08.jpg",
+        "alt": "Water Station portfolio image 8"
       }
     ]
   },
@@ -368,122 +316,58 @@ export const projects = [
     ]
   },
   {
-    "title": "4.48 Psychosis",
-    "slug": "448-psychosis",
-    "category": "Design",
-    "description": "4.48 Psychosis documentation featuring costume design, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "title": "Puana",
+    "slug": "puana",
+    "category": "Builds",
+    "description": "Puana documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
     "images": [
       {
-        "src": "public/assets/projects/448-psychosis/01.jpg",
-        "alt": "4.48 Psychosis portfolio image 1"
+        "src": "public/assets/projects/puana/01.jpg",
+        "alt": "Puana portfolio image 1"
       },
       {
-        "src": "public/assets/projects/448-psychosis/02.jpg",
-        "alt": "4.48 Psychosis portfolio image 2"
+        "src": "public/assets/projects/puana/02.jpg",
+        "alt": "Puana portfolio image 2"
       },
       {
-        "src": "public/assets/projects/448-psychosis/03.jpg",
-        "alt": "4.48 Psychosis portfolio image 3"
+        "src": "public/assets/projects/puana/03.jpg",
+        "alt": "Puana portfolio image 3"
       },
       {
-        "src": "public/assets/projects/448-psychosis/04.jpg",
-        "alt": "4.48 Psychosis portfolio image 4"
-      },
-      {
-        "src": "public/assets/projects/448-psychosis/05.jpg",
-        "alt": "4.48 Psychosis portfolio image 5"
-      },
-      {
-        "src": "public/assets/projects/448-psychosis/06.jpg",
-        "alt": "4.48 Psychosis portfolio image 6"
-      },
-      {
-        "src": "public/assets/projects/448-psychosis/07.jpg",
-        "alt": "4.48 Psychosis portfolio image 7"
-      },
-      {
-        "src": "public/assets/projects/448-psychosis/08.jpg",
-        "alt": "4.48 Psychosis portfolio image 8"
+        "src": "public/assets/projects/puana/04.jpg",
+        "alt": "Puana portfolio image 4"
       }
     ]
   },
   {
-    "title": "AWTYB",
-    "slug": "awtyb",
-    "category": "Design",
-    "description": "AWTYB documentation featuring costume design, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "title": "Mulan",
+    "slug": "mulan",
+    "category": "Builds",
+    "description": "Mulan documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
     "images": [
       {
-        "src": "public/assets/projects/awtyb/01.jpg",
-        "alt": "AWTYB portfolio image 1"
+        "src": "public/assets/projects/mulan/01.jpg",
+        "alt": "Mulan portfolio image 1"
       },
       {
-        "src": "public/assets/projects/awtyb/02.jpg",
-        "alt": "AWTYB portfolio image 2"
+        "src": "public/assets/projects/mulan/02.jpg",
+        "alt": "Mulan portfolio image 2"
       },
       {
-        "src": "public/assets/projects/awtyb/03.jpg",
-        "alt": "AWTYB portfolio image 3"
+        "src": "public/assets/projects/mulan/03.jpg",
+        "alt": "Mulan portfolio image 3"
       },
       {
-        "src": "public/assets/projects/awtyb/04.jpg",
-        "alt": "AWTYB portfolio image 4"
+        "src": "public/assets/projects/mulan/04.jpg",
+        "alt": "Mulan portfolio image 4"
       },
       {
-        "src": "public/assets/projects/awtyb/05.jpg",
-        "alt": "AWTYB portfolio image 5"
+        "src": "public/assets/projects/mulan/05.jpg",
+        "alt": "Mulan portfolio image 5"
       },
       {
-        "src": "public/assets/projects/awtyb/06.jpg",
-        "alt": "AWTYB portfolio image 6"
-      },
-      {
-        "src": "public/assets/projects/awtyb/07.jpg",
-        "alt": "AWTYB portfolio image 7"
-      },
-      {
-        "src": "public/assets/projects/awtyb/08.jpg",
-        "alt": "AWTYB portfolio image 8"
-      }
-    ]
-  },
-  {
-    "title": "Water Station",
-    "slug": "water-station",
-    "category": "Design",
-    "description": "Water Station documentation featuring costume design, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
-    "images": [
-      {
-        "src": "public/assets/projects/water-station/01.jpg",
-        "alt": "Water Station portfolio image 1"
-      },
-      {
-        "src": "public/assets/projects/water-station/02.jpg",
-        "alt": "Water Station portfolio image 2"
-      },
-      {
-        "src": "public/assets/projects/water-station/03.jpg",
-        "alt": "Water Station portfolio image 3"
-      },
-      {
-        "src": "public/assets/projects/water-station/04.jpg",
-        "alt": "Water Station portfolio image 4"
-      },
-      {
-        "src": "public/assets/projects/water-station/05.jpg",
-        "alt": "Water Station portfolio image 5"
-      },
-      {
-        "src": "public/assets/projects/water-station/06.jpg",
-        "alt": "Water Station portfolio image 6"
-      },
-      {
-        "src": "public/assets/projects/water-station/07.jpg",
-        "alt": "Water Station portfolio image 7"
-      },
-      {
-        "src": "public/assets/projects/water-station/08.jpg",
-        "alt": "Water Station portfolio image 8"
+        "src": "public/assets/projects/mulan/06.jpg",
+        "alt": "Mulan portfolio image 6"
       }
     ]
   },
@@ -528,114 +412,150 @@ export const projects = [
     ]
   },
   {
-    "title": "Dance Dance Dance",
-    "slug": "dance-dance-dance",
+    "title": "Kabuki",
+    "slug": "kabuki",
     "category": "Builds",
-    "description": "Dance Dance Dance documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Kabuki documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
     "images": [
       {
-        "src": "public/assets/projects/dance-dance-dance/01.jpg",
-        "alt": "Dance Dance Dance portfolio image 1"
+        "src": "public/assets/projects/kabuki/01.jpg",
+        "alt": "Kabuki portfolio image 1"
       },
       {
-        "src": "public/assets/projects/dance-dance-dance/02.jpg",
-        "alt": "Dance Dance Dance portfolio image 2"
+        "src": "public/assets/projects/kabuki/02.jpg",
+        "alt": "Kabuki portfolio image 2"
       },
       {
-        "src": "public/assets/projects/dance-dance-dance/03.jpg",
-        "alt": "Dance Dance Dance portfolio image 3"
+        "src": "public/assets/projects/kabuki/03.jpg",
+        "alt": "Kabuki portfolio image 3"
       },
       {
-        "src": "public/assets/projects/dance-dance-dance/04.jpg",
-        "alt": "Dance Dance Dance portfolio image 4"
+        "src": "public/assets/projects/kabuki/04.jpg",
+        "alt": "Kabuki portfolio image 4"
       },
       {
-        "src": "public/assets/projects/dance-dance-dance/05.jpg",
-        "alt": "Dance Dance Dance portfolio image 5"
+        "src": "public/assets/projects/kabuki/05.jpg",
+        "alt": "Kabuki portfolio image 5"
       },
       {
-        "src": "public/assets/projects/dance-dance-dance/06.jpg",
-        "alt": "Dance Dance Dance portfolio image 6"
+        "src": "public/assets/projects/kabuki/06.jpg",
+        "alt": "Kabuki portfolio image 6"
       },
       {
-        "src": "public/assets/projects/dance-dance-dance/07.jpg",
-        "alt": "Dance Dance Dance portfolio image 7"
+        "src": "public/assets/projects/kabuki/07.jpg",
+        "alt": "Kabuki portfolio image 7"
+      },
+      {
+        "src": "public/assets/projects/kabuki/08.jpg",
+        "alt": "Kabuki portfolio image 8"
       }
     ]
   },
   {
-    "title": "Tutu Base",
-    "slug": "tutu-base",
+    "title": "Moana",
+    "slug": "moana",
     "category": "Builds",
-    "description": "Tutu Base documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Moana documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
     "images": [
       {
-        "src": "public/assets/projects/tutu-base/01.jpg",
-        "alt": "Tutu Base portfolio image 1"
+        "src": "public/assets/projects/moana/05.jpg",
+        "alt": "Moana portfolio image 5"
       },
       {
-        "src": "public/assets/projects/tutu-base/02.jpg",
-        "alt": "Tutu Base portfolio image 2"
+        "src": "public/assets/projects/moana/01.jpg",
+        "alt": "Moana portfolio image 1"
       },
       {
-        "src": "public/assets/projects/tutu-base/03.jpg",
-        "alt": "Tutu Base portfolio image 3"
+        "src": "public/assets/projects/moana/02.jpg",
+        "alt": "Moana portfolio image 2"
       },
       {
-        "src": "public/assets/projects/tutu-base/04.jpg",
-        "alt": "Tutu Base portfolio image 4"
+        "src": "public/assets/projects/moana/03.jpg",
+        "alt": "Moana portfolio image 3"
       },
       {
-        "src": "public/assets/projects/tutu-base/05.jpg",
-        "alt": "Tutu Base portfolio image 5"
+        "src": "public/assets/projects/moana/04.jpg",
+        "alt": "Moana portfolio image 4"
+      },
+      {
+        "src": "public/assets/projects/moana/06.jpg",
+        "alt": "Moana portfolio image 6"
+      },
+      {
+        "src": "public/assets/projects/moana/07.jpg",
+        "alt": "Moana portfolio image 7"
+      },
+      {
+        "src": "public/assets/projects/moana/08.jpg",
+        "alt": "Moana portfolio image 8"
       }
     ]
   },
   {
-    "title": "Corset 1",
-    "slug": "corset-1",
+    "title": "Abstract Ideas",
+    "slug": "abstract-ideas",
+    "category": "Builds",
+    "description": "Abstract Ideas documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "images": [
+      {
+        "src": "public/assets/projects/abstract-ideas/02.jpg",
+        "alt": "Abstract Ideas portfolio image 2"
+      },
+      {
+        "src": "public/assets/projects/abstract-ideas/01.jpg",
+        "alt": "Abstract Ideas portfolio image 1"
+      },
+      {
+        "src": "public/assets/projects/abstract-ideas/03.jpg",
+        "alt": "Abstract Ideas portfolio image 3"
+      },
+      {
+        "src": "public/assets/projects/abstract-ideas/04.jpg",
+        "alt": "Abstract Ideas portfolio image 4"
+      },
+      {
+        "src": "public/assets/projects/abstract-ideas/05.jpg",
+        "alt": "Abstract Ideas portfolio image 5"
+      },
+      {
+        "src": "public/assets/projects/abstract-ideas/06.jpg",
+        "alt": "Abstract Ideas portfolio image 6"
+      },
+      {
+        "src": "public/assets/projects/abstract-ideas/07.jpg",
+        "alt": "Abstract Ideas portfolio image 7"
+      }
+    ]
+  },
+  {
+    "title": "Corsetry",
+    "slug": "corsetry",
     "category": "Skills",
-    "description": "Corset 1 documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Corsetry documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
     "images": [
       {
         "src": "public/assets/projects/corset-1/01.jpg",
-        "alt": "Corset 1 portfolio image 1"
+        "alt": "Corset 1 corsetry portfolio image 1"
       },
       {
         "src": "public/assets/projects/corset-1/02.jpg",
-        "alt": "Corset 1 portfolio image 2"
-      }
-    ]
-  },
-  {
-    "title": "Corset 2",
-    "slug": "corset-2",
-    "category": "Skills",
-    "description": "Corset 2 documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
-    "images": [
+        "alt": "Corset 1 corsetry portfolio image 2"
+      },
       {
         "src": "public/assets/projects/corset-2/01.jpg",
-        "alt": "Corset 2 portfolio image 1"
-      }
-    ]
-  },
-  {
-    "title": "Corset 3",
-    "slug": "corset-3",
-    "category": "Skills",
-    "description": "Corset 3 documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
-    "images": [
+        "alt": "Corset 2 corsetry portfolio image 1"
+      },
       {
         "src": "public/assets/projects/corset-3/01.jpg",
-        "alt": "Corset 3 portfolio image 1"
+        "alt": "Corset 3 corsetry portfolio image 1"
       },
       {
         "src": "public/assets/projects/corset-3/02.jpg",
-        "alt": "Corset 3 portfolio image 2"
+        "alt": "Corset 3 corsetry portfolio image 2"
       },
       {
         "src": "public/assets/projects/corset-3/03.jpg",
-        "alt": "Corset 3 portfolio image 3"
+        "alt": "Corset 3 corsetry portfolio image 3"
       }
     ]
   },
@@ -686,6 +606,10 @@ export const projects = [
     "description": "Millinery documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
     "images": [
       {
+        "src": "public/assets/projects/millinery/05.jpg",
+        "alt": "Millinery portfolio image 5"
+      },
+      {
         "src": "public/assets/projects/millinery/01.jpg",
         "alt": "Millinery portfolio image 1"
       },
@@ -700,10 +624,6 @@ export const projects = [
       {
         "src": "public/assets/projects/millinery/04.jpg",
         "alt": "Millinery portfolio image 4"
-      },
-      {
-        "src": "public/assets/projects/millinery/05.jpg",
-        "alt": "Millinery portfolio image 5"
       },
       {
         "src": "public/assets/projects/millinery/06.jpg",
@@ -760,42 +680,42 @@ export const projects = [
     ]
   },
   {
-    "title": "Specialty Dye",
-    "slug": "specialty-dye",
+    "title": "Natural Dye",
+    "slug": "natural-dye",
     "category": "Skills",
-    "description": "Specialty Dye documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Natural Dye documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
     "images": [
       {
         "src": "public/assets/projects/specialty-dye/01.jpg",
-        "alt": "Specialty Dye portfolio image 1"
+        "alt": "Natural Dye portfolio image 1"
       },
       {
         "src": "public/assets/projects/specialty-dye/02.jpg",
-        "alt": "Specialty Dye portfolio image 2"
+        "alt": "Natural Dye portfolio image 2"
       },
       {
         "src": "public/assets/projects/specialty-dye/03.jpg",
-        "alt": "Specialty Dye portfolio image 3"
+        "alt": "Natural Dye portfolio image 3"
       },
       {
         "src": "public/assets/projects/specialty-dye/04.jpg",
-        "alt": "Specialty Dye portfolio image 4"
+        "alt": "Natural Dye portfolio image 4"
       },
       {
         "src": "public/assets/projects/specialty-dye/05.jpg",
-        "alt": "Specialty Dye portfolio image 5"
+        "alt": "Natural Dye portfolio image 5"
       },
       {
         "src": "public/assets/projects/specialty-dye/06.jpg",
-        "alt": "Specialty Dye portfolio image 6"
+        "alt": "Natural Dye portfolio image 6"
       },
       {
         "src": "public/assets/projects/specialty-dye/07.jpg",
-        "alt": "Specialty Dye portfolio image 7"
+        "alt": "Natural Dye portfolio image 7"
       },
       {
         "src": "public/assets/projects/specialty-dye/08.jpg",
-        "alt": "Specialty Dye portfolio image 8"
+        "alt": "Natural Dye portfolio image 8"
       }
     ]
   }
