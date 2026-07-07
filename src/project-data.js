@@ -646,6 +646,21 @@ export const projects = [
         "src": "public/assets/projects/448-psychosis/10.jpg",
         "alt": "4.48 Psychosis portfolio image 10",
         "type": "image"
+      },
+      {
+        "src": "public/assets/projects/448-psychosis/11.jpg",
+        "alt": "4.48 Psychosis portfolio image 11",
+        "type": "image"
+      },
+      {
+        "src": "public/assets/projects/448-psychosis/12.jpg",
+        "alt": "4.48 Psychosis portfolio image 12",
+        "type": "image"
+      },
+      {
+        "src": "public/assets/projects/448-psychosis/13.jpg",
+        "alt": "4.48 Psychosis portfolio image 13",
+        "type": "image"
       }
     ]
   },
@@ -859,6 +874,21 @@ export const projects = [
         "src": "public/assets/projects/mr-burns/16.jpg",
         "alt": "Mr. Burns portfolio image 16",
         "type": "image"
+      },
+      {
+        "src": "public/assets/projects/mr-burns/17.jpg",
+        "alt": "Mr. Burns portfolio image 17",
+        "type": "image"
+      },
+      {
+        "src": "public/assets/projects/mr-burns/18.jpg",
+        "alt": "Mr. Burns portfolio image 18",
+        "type": "image"
+      },
+      {
+        "src": "public/assets/projects/mr-burns/19.jpg",
+        "alt": "Mr. Burns portfolio image 19",
+        "type": "image"
       }
     ]
   },
@@ -1014,14 +1044,14 @@ export const projects = [
         "type": "image"
       },
       {
-        "src": "public/assets/projects/rent/02.mp4",
-        "alt": "Rent portfolio video 2",
-        "type": "video"
+        "src": "public/assets/projects/rent/02.jpg",
+        "alt": "Rent portfolio image 2",
+        "type": "image"
       },
       {
-        "src": "public/assets/projects/rent/03.jpg",
-        "alt": "Rent portfolio image 3",
-        "type": "image"
+        "src": "public/assets/projects/rent/03.mp4",
+        "alt": "Rent portfolio video 3",
+        "type": "video"
       },
       {
         "src": "public/assets/projects/rent/04.jpg",
@@ -1054,14 +1084,14 @@ export const projects = [
         "type": "image"
       },
       {
-        "src": "public/assets/projects/rent/10.mp4",
-        "alt": "Rent portfolio video 10",
-        "type": "video"
+        "src": "public/assets/projects/rent/10.jpg",
+        "alt": "Rent portfolio image 10",
+        "type": "image"
       },
       {
-        "src": "public/assets/projects/rent/11.jpg",
-        "alt": "Rent portfolio image 11",
-        "type": "image"
+        "src": "public/assets/projects/rent/11.mp4",
+        "alt": "Rent portfolio video 11",
+        "type": "video"
       },
       {
         "src": "public/assets/projects/rent/12.jpg",
@@ -1076,6 +1106,21 @@ export const projects = [
       {
         "src": "public/assets/projects/rent/14.jpg",
         "alt": "Rent portfolio image 14",
+        "type": "image"
+      },
+      {
+        "src": "public/assets/projects/rent/15.jpg",
+        "alt": "Rent portfolio image 15",
+        "type": "image"
+      },
+      {
+        "src": "public/assets/projects/rent/16.jpg",
+        "alt": "Rent portfolio image 16",
+        "type": "image"
+      },
+      {
+        "src": "public/assets/projects/rent/17.jpg",
+        "alt": "Rent portfolio image 17",
         "type": "image"
       }
     ]
@@ -1158,6 +1203,16 @@ export const projects = [
         "src": "public/assets/projects/puana/14.jpg",
         "alt": "Puana portfolio image 14",
         "type": "image"
+      },
+      {
+        "src": "public/assets/projects/puana/15.jpg",
+        "alt": "Puana portfolio image 15",
+        "type": "image"
+      },
+      {
+        "src": "public/assets/projects/puana/16.jpg",
+        "alt": "Puana portfolio image 16",
+        "type": "image"
       }
     ]
   },
@@ -1239,6 +1294,11 @@ export const projects = [
         "src": "public/assets/projects/mulan/14.jpg",
         "alt": "Mulan portfolio image 14",
         "type": "image"
+      },
+      {
+        "src": "public/assets/projects/mulan/15.jpg",
+        "alt": "Mulan portfolio image 15",
+        "type": "image"
       }
     ]
   },
@@ -1289,6 +1349,11 @@ export const projects = [
       {
         "src": "public/assets/projects/glitter-in-the-paakai/08.jpg",
         "alt": "Glitter in the Pā’a’kai portfolio image 8",
+        "type": "image"
+      },
+      {
+        "src": "public/assets/projects/glitter-in-the-paakai/09.jpg",
+        "alt": "Glitter in the Pā’a’kai portfolio image 9",
         "type": "image"
       }
     ]
@@ -1354,8 +1419,8 @@ export const projects = [
     "description": "Moana documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
     "images": [
       {
-        "src": "public/assets/projects/moana/05.jpg",
-        "alt": "Moana portfolio image 5",
+        "src": "public/assets/projects/moana/07.jpg",
+        "alt": "Moana portfolio image 7",
         "type": "image"
       },
       {
@@ -1379,13 +1444,13 @@ export const projects = [
         "type": "image"
       },
       {
-        "src": "public/assets/projects/moana/06.jpg",
-        "alt": "Moana portfolio image 6",
+        "src": "public/assets/projects/moana/05.jpg",
+        "alt": "Moana portfolio image 5",
         "type": "image"
       },
       {
-        "src": "public/assets/projects/moana/07.jpg",
-        "alt": "Moana portfolio image 7",
+        "src": "public/assets/projects/moana/06.jpg",
+        "alt": "Moana portfolio image 6",
         "type": "image"
       },
       {
@@ -1561,6 +1626,10 @@ export const projects = [
       {
         "src": "public/assets/projects/corset-2/09.jpg",
         "alt": "Corset 2 corsetry portfolio image 9"
+      },
+      {
+        "src": "public/assets/projects/corset-2/10.jpg",
+        "alt": "Corset 2 corsetry portfolio image 10"
       },
       {
         "src": "public/assets/projects/corset-3/01.jpg",

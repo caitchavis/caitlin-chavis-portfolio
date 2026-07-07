@@ -57,6 +57,8 @@ const slugify = (value) =>
 
 const imageExtensions = new Set(['', '.jpg', '.jpeg', '.png', '.heic', '.webp', '.tif', '.tiff']);
 const videoExtensions = new Set(['.mov', '.mp4', '.m4v']);
+const isHeifLikeExtension = (extension) => extension === '' || extension === '.heic' || /^\.\d+$/.test(extension);
+const isImageFile = (file) => !file.startsWith('.') && (imageExtensions.has(extname(file).toLowerCase()) || /^\.\d+$/.test(extname(file).toLowerCase()));
 
 const numericRank = (name) => {
   const match = basename(name).match(/^(\d+(?:\.\d+)?)/);
@@ -86,7 +88,7 @@ const moveImageToFront = (project, filename) => {
 const curateProjects = (projectList) => {
   const bySlug = new Map(projectList.map((project) => [project.slug, project]));
   moveImageToFront(bySlug.get('abstract-ideas'), '02.jpg');
-  moveImageToFront(bySlug.get('moana'), '05.jpg');
+  moveImageToFront(bySlug.get('moana'), '07.jpg');
   moveImageToFront(bySlug.get('millinery'), '05.jpg');
 
   const maidenBenten = bySlug.get('kabuki');
@@ -163,11 +165,19 @@ const convertImage = async (source, outDir, baseName, index) => {
   const imageName = `${baseName}.jpg`;
   const imageOut = join(outDir, imageName);
 
-  if (['', '.heic'].includes(extname(source).toLowerCase())) {
+  try {
+    await sharp(source).rotate().resize(resize).jpeg({ quality: 86, mozjpeg: true }).toFile(imageOut);
+    return imageName;
+  } catch (sharpError) {
+    if (!isHeifLikeExtension(extname(source).toLowerCase())) throw sharpError;
+  }
+
+  if (isHeifLikeExtension(extname(source).toLowerCase())) {
     const thumbDir = join(tmpdir(), `caitlin-heic-${Date.now()}-${Math.random().toString(16).slice(2)}`);
     await mkdir(thumbDir, { recursive: true });
     try {
-      const qlSource = extname(source) ? source : join(thumbDir, `${basename(source)}.HEIC`);
+      const safeBaseName = basename(source).replace(/[^a-z0-9_-]+/gi, '-');
+      const qlSource = extname(source).toLowerCase() === '.heic' ? source : join(thumbDir, `${safeBaseName || 'image'}.HEIC`);
       if (qlSource !== source) await copyFile(source, qlSource);
       await run('qlmanage', ['-t', '-s', String(resize.width), '-o', thumbDir, qlSource], { timeout: 15000 });
       const thumbnail = join(thumbDir, `${basename(qlSource)}.png`);
@@ -176,13 +186,6 @@ const convertImage = async (source, outDir, baseName, index) => {
     } finally {
       await rm(thumbDir, { recursive: true, force: true });
     }
-  }
-
-  try {
-    await sharp(source).rotate().resize(resize).jpeg({ quality: 86, mozjpeg: true }).toFile(imageOut);
-    return imageName;
-  } catch (error) {
-    throw error;
   }
 };
 
@@ -216,7 +219,7 @@ for (const [folder, category] of entries) {
   const files = (await readdir(dir))
     .filter((file) => {
       const extension = extname(file).toLowerCase();
-      return imageExtensions.has(extension) || videoExtensions.has(extension);
+      return isImageFile(file) || videoExtensions.has(extension);
     })
     .sort((a, b) => numericRank(a) - numericRank(b) || a.localeCompare(b));
   if (!files.length) continue;
