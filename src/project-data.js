@@ -598,13 +598,13 @@ export const projects = [
     "description": "4.48 Psychosis documentation featuring costume design, construction, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
     "images": [
       {
-        "src": "public/assets/projects/448-psychosis/01.jpg",
-        "alt": "4.48 Psychosis portfolio image 1",
+        "src": "public/assets/projects/448-psychosis/02.jpg",
+        "alt": "4.48 Psychosis portfolio image 2",
         "type": "image"
       },
       {
-        "src": "public/assets/projects/448-psychosis/02.jpg",
-        "alt": "4.48 Psychosis portfolio image 2",
+        "src": "public/assets/projects/448-psychosis/01.jpg",
+        "alt": "4.48 Psychosis portfolio image 1",
         "type": "image"
       },
       {
@@ -1226,6 +1226,11 @@ export const projects = [
     "description": "Mulan documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
     "images": [
       {
+        "src": "public/assets/projects/mulan/15.jpg",
+        "alt": "Mulan portfolio image 15",
+        "type": "image"
+      },
+      {
         "src": "public/assets/projects/mulan/01.jpg",
         "alt": "Mulan portfolio image 1",
         "type": "image"
@@ -1293,11 +1298,6 @@ export const projects = [
       {
         "src": "public/assets/projects/mulan/14.jpg",
         "alt": "Mulan portfolio image 14",
-        "type": "image"
-      },
-      {
-        "src": "public/assets/projects/mulan/15.jpg",
-        "alt": "Mulan portfolio image 15",
         "type": "image"
       }
     ]

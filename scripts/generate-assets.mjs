@@ -89,6 +89,8 @@ const curateProjects = (projectList) => {
   const bySlug = new Map(projectList.map((project) => [project.slug, project]));
   moveImageToFront(bySlug.get('abstract-ideas'), '02.jpg');
   moveImageToFront(bySlug.get('moana'), '07.jpg');
+  moveImageToFront(bySlug.get('448-psychosis'), '02.jpg');
+  moveImageToFront(bySlug.get('mulan'), '15.jpg');
   moveImageToFront(bySlug.get('millinery'), '05.jpg');
 
   const maidenBenten = bySlug.get('kabuki');
