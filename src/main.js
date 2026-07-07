@@ -1,4 +1,4 @@
-import { projects } from './project-data.js?v=20260706-safari-images';
+import { projects } from './project-data.js?v=20260706-full-media';
 
 const grid = document.querySelector('#projectGrid');
 const filterButtons = [...document.querySelectorAll('.filter-button')];
@@ -12,21 +12,39 @@ const closeDialog = document.querySelector('.dialog-close');
 let currentFilter = 'All';
 
 const projectSummary = (project) => {
-  const count = project.images.length;
-  const label = count === 1 ? 'image' : 'images';
-  return `${project.category} · ${count} ${label}`;
+  const images = project.images.filter((item) => item.type !== 'video').length;
+  const videos = project.images.filter((item) => item.type === 'video').length;
+  const imageLabel = images === 1 ? 'image' : 'images';
+  const videoLabel = videos === 1 ? 'video' : 'videos';
+  const media = videos ? `${images} ${imageLabel} · ${videos} ${videoLabel}` : `${images} ${imageLabel}`;
+  return `${project.category} · ${media}`;
+};
+
+const projectMatchesFilter = (project) =>
+  currentFilter === 'All' || project.category === currentFilter || project.tags?.includes(currentFilter);
+
+const renderMedia = (item) => {
+  if (item.type === 'video') {
+    return `
+      <video controls preload="metadata" playsinline>
+        <source src="${item.src}" />
+        Your browser does not support this video.
+      </video>
+    `;
+  }
+  return `<img src="${item.src}" alt="${item.alt}" />`;
 };
 
 const renderProjects = () => {
-  const visible = projects.filter((project) => currentFilter === 'All' || project.category === currentFilter);
+  const visible = projects.filter(projectMatchesFilter);
   grid.innerHTML = visible
     .map((project, index) => {
-      const cover = project.images[0];
+      const cover = project.images.find((item) => item.type !== 'video') || project.images[0];
       return `
         <article class="project-card" data-reveal style="--delay: ${Math.min(index * 55, 330)}ms">
           <button type="button" data-project="${project.slug}" aria-label="Open ${project.title}">
             <span class="project-media">
-              <img src="${cover.src}" alt="${cover.alt}" />
+              ${renderMedia(cover)}
             </span>
             <span class="project-meta">
               <span>${projectSummary(project)}</span>
@@ -47,7 +65,7 @@ const openProject = (slug) => {
   dialogCategory.textContent = projectSummary(project);
   dialogDescription.textContent = project.description;
   dialogGallery.innerHTML = project.images
-    .map((image) => `<img src="${image.src}" alt="${image.alt}" />`)
+    .map(renderMedia)
     .join('');
   dialog.showModal();
   document.body.classList.add('dialog-open');

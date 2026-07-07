@@ -288,7 +288,8 @@ h3 {
   background: #111;
 }
 
-.project-media img {
+.project-media img,
+.project-media video {
   height: auto;
   transition: transform 600ms ease;
 }
@@ -476,9 +477,16 @@ h3 {
   gap: 12px;
 }
 
-.dialog-gallery img {
+.dialog-gallery img,
+.dialog-gallery video {
   height: auto;
   background: transparent;
+}
+
+.project-media video,
+.dialog-gallery video {
+  display: block;
+  width: 100%;
 }
 
 [data-reveal] {

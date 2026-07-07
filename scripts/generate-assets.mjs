@@ -17,12 +17,12 @@ const sourceRoot = join(root, 'Portfolio');
 
 const entries = [
   ['Rent - Design', 'Design'],
-  ['Builds - Designs - AWTYB ', 'Design'],
-  ['Builds - Design - 4.48 Psychosis', 'Design'],
+  ['Builds - Designs - AWTYB ', 'Design + Build'],
+  ['Builds - Design - 4.48 Psychosis', 'Design + Build'],
   ['Design - Spelling Bee', 'Design'],
   ['Design - West Side Story', 'Design'],
   ['Designs - Mr. Burns', 'Design'],
-  ['Builds - Designs - Water Station', 'Design'],
+  ['Builds - Designs - Water Station', 'Design + Build'],
   ['Builds - Rent ', 'Builds'],
   ['Builds - Puana ', 'Builds'],
   ['Builds - Mulan ', 'Builds'],
@@ -55,7 +55,8 @@ const slugify = (value) =>
     .toLowerCase()
     .replace(/\s+/g, '-');
 
-const allowed = new Set(['.jpg', '.jpeg', '.png', '.heic', '.webp', '.tif', '.tiff']);
+const imageExtensions = new Set(['', '.jpg', '.jpeg', '.png', '.heic', '.webp', '.tif', '.tiff']);
+const videoExtensions = new Set(['.mov', '.mp4', '.m4v']);
 
 const numericRank = (name) => {
   const match = basename(name).match(/^(\d+(?:\.\d+)?)/);
@@ -66,6 +67,8 @@ const projectDescription = (title, category) => {
   const role =
     category === 'Design'
       ? 'costume design, visual research, and production storytelling'
+      : category === 'Design + Build'
+        ? 'costume design, construction, visual research, and production storytelling'
       : category === 'Skills'
         ? 'specialty costume craft, finish work, and process documentation'
         : 'costume construction, stitching, alterations, and build process';
@@ -85,6 +88,16 @@ const curateProjects = (projectList) => {
   moveImageToFront(bySlug.get('abstract-ideas'), '02.jpg');
   moveImageToFront(bySlug.get('moana'), '05.jpg');
   moveImageToFront(bySlug.get('millinery'), '05.jpg');
+
+  const maidenBenten = bySlug.get('kabuki');
+  if (maidenBenten) {
+    maidenBenten.title = 'The Maiden Benten and the Bandits of the White Waves';
+    maidenBenten.description = maidenBenten.description.replace(/^Kabuki documentation/, 'The Maiden Benten and the Bandits of the White Waves documentation');
+    maidenBenten.images = maidenBenten.images.map((image) => ({
+      ...image,
+      alt: image.alt.replace(/^Kabuki/, 'The Maiden Benten and the Bandits of the White Waves'),
+    }));
+  }
 
   const naturalDye = bySlug.get('specialty-dye');
   if (naturalDye) {
@@ -120,6 +133,7 @@ const curateProjects = (projectList) => {
       })),
     ),
   };
+  moveImageToFront(corsetry, '02.jpg');
 
   return [
     'rent---design',
@@ -149,14 +163,19 @@ const convertImage = async (source, outDir, baseName, index) => {
   const imageName = `${baseName}.jpg`;
   const imageOut = join(outDir, imageName);
 
-  if (extname(source).toLowerCase() === '.heic') {
+  if (['', '.heic'].includes(extname(source).toLowerCase())) {
     const thumbDir = join(tmpdir(), `caitlin-heic-${Date.now()}-${Math.random().toString(16).slice(2)}`);
     await mkdir(thumbDir, { recursive: true });
-    await run('qlmanage', ['-t', '-s', String(resize.width), '-o', thumbDir, source]);
-    const thumbnail = join(thumbDir, `${basename(source)}.png`);
-    await sharp(thumbnail).resize(resize).jpeg({ quality: 86, mozjpeg: true }).toFile(imageOut);
-    await rm(thumbDir, { recursive: true, force: true });
-    return imageName;
+    try {
+      const qlSource = extname(source) ? source : join(thumbDir, `${basename(source)}.HEIC`);
+      if (qlSource !== source) await copyFile(source, qlSource);
+      await run('qlmanage', ['-t', '-s', String(resize.width), '-o', thumbDir, qlSource], { timeout: 15000 });
+      const thumbnail = join(thumbDir, `${basename(qlSource)}.png`);
+      await sharp(thumbnail).resize(resize).jpeg({ quality: 86, mozjpeg: true }).toFile(imageOut);
+      return imageName;
+    } finally {
+      await rm(thumbDir, { recursive: true, force: true });
+    }
   }
 
   try {
@@ -167,8 +186,16 @@ const convertImage = async (source, outDir, baseName, index) => {
   }
 };
 
+const copyVideo = async (source, outDir, baseName) => {
+  const extension = extname(source).toLowerCase();
+  const videoName = `${baseName}${extension}`;
+  await copyFile(source, join(outDir, videoName));
+  return videoName;
+};
+
 await mkdir(publicAssets, { recursive: true });
 await mkdir(publicDocs, { recursive: true });
+await rm(join(publicAssets, 'projects'), { recursive: true, force: true });
 
 await sharp(join(root, 'artist_image.png'))
   .resize({ width: 1200, withoutEnlargement: true })
@@ -187,9 +214,11 @@ for (const [folder, category] of entries) {
   const dir = join(sourceRoot, folder);
   if (!existsSync(dir)) continue;
   const files = (await readdir(dir))
-    .filter((file) => allowed.has(extname(file).toLowerCase()))
-    .sort((a, b) => numericRank(a) - numericRank(b) || a.localeCompare(b))
-    .slice(0, 8);
+    .filter((file) => {
+      const extension = extname(file).toLowerCase();
+      return imageExtensions.has(extension) || videoExtensions.has(extension);
+    })
+    .sort((a, b) => numericRank(a) - numericRank(b) || a.localeCompare(b));
   if (!files.length) continue;
 
   const title = titleFromFolder(folder);
@@ -201,12 +230,15 @@ for (const [folder, category] of entries) {
   const images = [];
   for (const [index, file] of files.entries()) {
     const source = join(dir, file);
+    const extension = extname(file).toLowerCase();
     const baseName = String(index + 1).padStart(2, '0');
     try {
-      const outName = await convertImage(source, outDir, baseName, index);
+      const isVideo = videoExtensions.has(extension);
+      const outName = isVideo ? await copyVideo(source, outDir, baseName) : await convertImage(source, outDir, baseName, index);
       images.push({
         src: `public/assets/projects/${slug}/${outName}`,
-        alt: `${title} portfolio image ${index + 1}`,
+        alt: `${title} portfolio ${isVideo ? 'video' : 'image'} ${index + 1}`,
+        type: isVideo ? 'video' : 'image',
       });
     } catch (error) {
       console.warn(`Skipped ${source}: ${error.message}`);
@@ -218,6 +250,7 @@ for (const [folder, category] of entries) {
       title,
       slug,
       category,
+      tags: category === 'Design + Build' ? ['Design', 'Builds'] : [category],
       description: projectDescription(title, category),
       images,
     });
