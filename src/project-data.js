@@ -6,7 +6,7 @@ export const projects = [
     "tags": [
       "Design"
     ],
-    "description": "Rent documentation featuring costume design, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "",
     "images": [
       {
         "src": "public/assets/projects/rent---design/01.jpg",
@@ -513,7 +513,7 @@ export const projects = [
       "Design",
       "Builds"
     ],
-    "description": "AWTYB documentation featuring costume design, construction, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Part of Kennedy Theaters 2023 - 2024 MainStage production season.\nDirected by: Pei-Ling Kao\nCostume Designer: Caitlin Chavis\n\nInspired by Afternoon of a Faun, this performance explored the human body, subtle sensuality, and the fluidity of gender. My design drew inspiration from natural anatomy, using appliques on mesh bodysuits to suggest the form of the body rather than explicitly reveal it. The placement of each applique was carefully considered to guide the viewer’s eye, creating the illusion of nudity while maintaining modesty and supporting the production’s artistic vision.",
     "images": [
       {
         "src": "public/assets/projects/awtyb/01.jpg",
@@ -595,7 +595,7 @@ export const projects = [
       "Design",
       "Builds"
     ],
-    "description": "4.48 Psychosis documentation featuring costume design, construction, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Part of Kennedy Theaters 2024 - 2025 MainStage production season.\nDirected by: Arlo Rowe\nCostume Designer: Caitlin Chavis\n\nThis production explored themes of mental health through a Japanese-influenced visual aesthetic. I designed the principal character’s costume by combining traditional Japanese silhouettes with subtle references to hospital garments. The robe was shortened to resemble a happi coat, the trousers were patterned after hakama, and a hospital gown-inspired fabric was incorporated to quietly foreshadow the character’s circumstances without making them immediately apparent.",
     "images": [
       {
         "src": "public/assets/projects/448-psychosis/02.jpg",
@@ -671,7 +671,7 @@ export const projects = [
     "tags": [
       "Design"
     ],
-    "description": "Spelling Bee documentation featuring costume design, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "",
     "images": [
       {
         "src": "public/assets/projects/spelling-bee/01.jpg",
@@ -727,7 +727,7 @@ export const projects = [
     "tags": [
       "Design"
     ],
-    "description": "West Side Story documentation featuring costume design, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "",
     "images": [
       {
         "src": "public/assets/projects/west-side-story/01.jpg",
@@ -793,7 +793,7 @@ export const projects = [
     "tags": [
       "Design"
     ],
-    "description": "Mr. Burns documentation featuring costume design, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "",
     "images": [
       {
         "src": "public/assets/projects/mr-burns/01.jpg",
@@ -900,7 +900,7 @@ export const projects = [
       "Design",
       "Builds"
     ],
-    "description": "Water Station documentation featuring costume design, construction, visual research, and production storytelling. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Part of Kennedy Theaters 2023 - 2024 MainStage production season.\nDirected by: Pei-Ling Kao\nCostume Designer: Caitlin Chavis\n\nI designed the costumes for an ensemble of characters whose appearance suggested lives shaped by constant travel, hinting at their journeys without defining where they had come from or where they were headed. Two key design challenges included creating the “Trash Queen,” a character who remained stationary onstage and was intended to camouflage with the set while still feeling regal, and engineering a performer-worn pack that appeared exceptionally heavy while remaining lightweight, functional, and comfortable throughout the performance.",
     "images": [
       {
         "src": "public/assets/projects/water-station/01.jpg",
@@ -1036,7 +1036,7 @@ export const projects = [
     "tags": [
       "Builds"
     ],
-    "description": "Rent documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Part of Kennedy Theaters 2024 - 2025 MainStage production season.\nWritten and Directed by: Joshua “Baba” Kamoaniʻala Tavares\nCostume Designer: Caitlin Chavis\n\nFor this production, I transformed a budget Santa costume into Angel’s signature dress, completely deconstructing and restructuring the garment to create a familiar silhouette that felt as though it had been creatively recycled by the character herself. For Maureen, I focused on a handmade, expressive aesthetic, embellishing her costume with playful fabrics and beading to reflect her artistic spirit and DIY approach to self-expression.",
     "images": [
       {
         "src": "public/assets/projects/rent/01.jpg",
@@ -1132,7 +1132,7 @@ export const projects = [
     "tags": [
       "Builds"
     ],
-    "description": "Puana documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Part of Kennedy Theaters 2024 - 2025 MainStage production season.\nWritten and Directed by: Tammy Hailiʻopua Baker\nCostume Designer: Kaneikoliaikaʻiukapuomua Baker\n\nFor this production, which explored the profound spiritual connection between Kanaka Maoli and their kupuna through the transformative power of song, I draped, patterned, mocked up, and constructed the garment from the designer’s rendering. Using the director’s selected fabric, I carefully planned the pattern placement to preserve the intended visual flow while achieving the silhouette and fit required for performance.",
     "images": [
       {
         "src": "public/assets/projects/puana/01.jpg",
@@ -1223,7 +1223,7 @@ export const projects = [
     "tags": [
       "Builds"
     ],
-    "description": "Mulan documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Part of Kennedy Theaters 2024 - 2025 MainStage production season.\nWritten and Directed by: Elizabeth Ung\nCostume Designer: Kaneikoliaikaʻiukapuomua Baker\n\nFor this production of Mulan, I collaborated with the costume designer to create a Terracotta Army-inspired uniform. I draped and patterned the canvas base before fabricating individual armor tiles from Styrofoam and Worbla, which were painted to resemble weathered metal. Each tile was then hand stitched to the garment, combining traditional patternmaking with armor fabrication techniques.",
     "images": [
       {
         "src": "public/assets/projects/mulan/15.jpg",
@@ -1309,7 +1309,7 @@ export const projects = [
     "tags": [
       "Builds"
     ],
-    "description": "Glitter in the Pā’a’kai documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Part of Kennedy Theaters 2023 - 2024 MainStage production season.\nWritten and Directed by: Joshua “Baba” Kamoaniʻala Tavares\nCostume Designer: Kaneikoliaikaʻiukapuomua Baker\n\nThis romper was created for a Hana Keaka theatre production rooted in hula and moʻolelo, telling a story centered on the meaning of ʻohana. I worked closely with the costume designer to develop a silhouette that was both flattering and playful while supporting the movement required for performance and reflecting the character’s personality.\n\nThe designer created a custom textile by hand-printing pua motifs onto palaka fabric, drawing on a material deeply rooted in Hawaiʻi’s history. I was responsible for building the mock-up and constructing the final garment, refining the fit through multiple iterations and carefully pattern matching the printed fabric throughout the piece. I also explored different finishing techniques and closure methods to achieve a clean, durable garment that could withstand the demands of the stage while maintaining the designer’s artistic vision.",
     "images": [
       {
         "src": "public/assets/projects/glitter-in-the-paakai/01.jpg",
@@ -1365,7 +1365,7 @@ export const projects = [
     "tags": [
       "Builds"
     ],
-    "description": "The Maiden Benten and the Bandits of the White Waves documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Part of Kennedy Theaters 2023 - 2024 Main stage production season\nDirected by: Julie Iezzi\n\nFor this Kabuki production, I constructed a hanten featuring screen-printed Japanese characters representing the shop where the character worked. Although a relatively simple build the project required an understanding of traditional Japanese garment construction.\n\nI also rebuilt a juban for the principal character, Benten, by carefully deconstructing and salvaging an existing garment. Working with fragile, aging silk required patience and precision, while the reconstruction relied on delicate hand stitching to preserve the garment’s traditional construction. Throughout the process, my work was reviewed and guided by Kabuki senseis, ensuring the techniques and finished garment remained true to traditional practices.",
     "images": [
       {
         "src": "public/assets/projects/kabuki/01.jpg",
@@ -1416,7 +1416,7 @@ export const projects = [
     "tags": [
       "Builds"
     ],
-    "description": "Moana documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Directed by: Cari Taira\nDesigned by: Caitlin Chavis and Devin Walter\n\nFor this production, I collaborated on the design and construction of several principal costumes, with a focus on creating a culturally grounded interpretation of Moana while working within a limited budget. The shop prioritized the use of existing fabric stock and readily available natural materials sourced from the aina whenever possible.\n\nThe Te Ka / Te Fiti transforming dress was developed with technical inspiration drawn from Ann Hould-Ward’s transformation costume work in Into the Woods, requiring construction methods that allowed the garment to shift effectively between characters on stage.\n\nFor Maui and Moana, I helped build ti leaf paʻu using natural materials under the guidance of a Maori cultural advisor, ensuring the process and final appearance remained respectful of Pacific cultural practices. The overall design goal was to represent Hawaiʻi in a way that felt more locally rooted while supporting the storytelling and practical demands of performance.",
     "images": [
       {
         "src": "public/assets/projects/moana/07.jpg",
@@ -1497,7 +1497,7 @@ export const projects = [
     "tags": [
       "Builds"
     ],
-    "description": "Abstract Ideas documentation featuring costume construction, stitching, alterations, and build process. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Each project was inspired by the challenge of creating a garment from found objects and unconventional materials. The goal was to explore new approaches to design, experiment with construction techniques, and use material limitations as a way to generate creative ideas.",
     "images": [
       {
         "src": "public/assets/projects/abstract-ideas/02.jpg",
@@ -1545,7 +1545,7 @@ export const projects = [
     "title": "Corsetry",
     "slug": "corsetry",
     "category": "Skills",
-    "description": "Corsetry documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Each corset is constructed from coutil and reinforced with sprung steel boning. The boning is enclosed using a sandwiched construction technique, creating a smooth, clean interior - concealing the bone channels between the layers. Grommets were installed using a combination of hand-setting and a press. Lastly, all lacing is finished with plastic aglets for a clean, durable finish.",
     "images": [
       {
         "src": "public/assets/projects/corset-1/02.jpg",
@@ -1672,7 +1672,7 @@ export const projects = [
     "tags": [
       "Skills"
     ],
-    "description": "Makeup documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Developed stage makeup designs for aging, gore, and fantasy characters through the use of face charts and practical application techniques. These projects emphasized color theory, prosthetic illusion, character storytelling, and makeup design tailored for stage performance.",
     "images": [
       {
         "src": "public/assets/projects/makeup/01.jpg",
@@ -1728,7 +1728,7 @@ export const projects = [
     "tags": [
       "Skills"
     ],
-    "description": "Millinery documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Created both buckram and felt hats, utilizing traditional blocking, shaping, and finishing techniques.",
     "images": [
       {
         "src": "public/assets/projects/millinery/05.jpg",
@@ -1789,7 +1789,7 @@ export const projects = [
     "tags": [
       "Skills"
     ],
-    "description": "Specialty Dressing documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Specialty dressing samples featuring techniques from Xiqu (Chinese opera) and Kabuki theatre, exploring traditional methods of garment preparation, layering, and dressing practices unique to each performance tradition.",
     "images": [
       {
         "src": "public/assets/projects/specialty-dressing/01.jpg",
@@ -1850,7 +1850,7 @@ export const projects = [
     "tags": [
       "Skills"
     ],
-    "description": "Natural Dye documentation featuring specialty costume craft, finish work, and process documentation. Replace this placeholder with production credits, venue, director, role, year, and collaborators when available.",
+    "description": "Explored natural dye practices using traditional processes and plant- and mineral-based materials. These studies showcase dye results created with hibiscus, butterfly pea flower, crushed cochineal, and an indigo vat, highlighting the variation and possibilities of natural color development.",
     "images": [
       {
         "src": "public/assets/projects/specialty-dye/01.jpg",

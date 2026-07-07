@@ -23,6 +23,23 @@ const projectSummary = (project) => {
 const projectMatchesFilter = (project) =>
   currentFilter === 'All' || project.category === currentFilter || project.tags?.includes(currentFilter);
 
+const escapeHtml = (value) =>
+  value.replace(/[&<>"']/g, (character) => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;',
+  })[character]);
+
+const renderDescription = (description = '') =>
+  description
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean)
+    .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
+    .join('');
+
 const renderMedia = (item) => {
   if (item.type === 'video') {
     return `
@@ -63,7 +80,7 @@ const openProject = (slug) => {
   if (!project) return;
   dialogTitle.textContent = project.title;
   dialogCategory.textContent = projectSummary(project);
-  dialogDescription.textContent = project.description;
+  dialogDescription.innerHTML = renderDescription(project.description);
   dialogGallery.innerHTML = project.images
     .map(renderMedia)
     .join('');

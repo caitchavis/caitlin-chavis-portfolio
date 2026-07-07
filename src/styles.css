@@ -471,6 +471,15 @@ h3 {
   line-height: 1.6;
 }
 
+.dialog-description {
+  display: grid;
+  gap: 12px;
+}
+
+.dialog-description p {
+  margin: 0;
+}
+
 .dialog-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
